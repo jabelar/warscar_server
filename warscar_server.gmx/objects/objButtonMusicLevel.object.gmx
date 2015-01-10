@@ -32,7 +32,7 @@ my_text[3]="Music 25%"
 my_text[4]="Music Off"
 image_speed = 0
 // retain settings in case returning from finished game
-image_index = global.music_level * 4
+image_index = 4 - global.music_level * 4
 </string>
           </argument>
         </arguments>

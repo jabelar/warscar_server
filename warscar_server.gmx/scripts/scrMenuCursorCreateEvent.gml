@@ -11,5 +11,6 @@ input_flag = ord('F')
 scrInputClear()
 
 gamepad_set_axis_deadzone(1, 0.2);
+gamepad_set_axis_deadzone(2, 0.2);
 
 current_player = PLAYER1

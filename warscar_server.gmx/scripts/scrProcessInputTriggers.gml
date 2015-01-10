@@ -11,7 +11,8 @@ else
 {
     // TODO
     // need to process current player stuff mapped to controller
-    key_weapon1_pressed = gamepad_button_check_pressed(1, gp_shoulderr) or gamepad_button_check_pressed(1, gp_shoulderrb);
-    key_weapon2_pressed = gamepad_button_check_pressed(1, gp_shoulderl) or gamepad_button_check_pressed(1, gp_shoulderlb); 
-    key_weapon3_pressed = gamepad_button_check_pressed(1, gp_face3);
+    key_weapon1_pressed = gamepad_button_check_pressed(contrl_num, gp_shoulderr) or gamepad_button_check_pressed(contrl_num, gp_shoulderrb);
+    key_weapon2_pressed = gamepad_button_check_pressed(contrl_num, gp_shoulderl) or gamepad_button_check_pressed(contrl_num, gp_shoulderlb); 
+    key_weapon3_pressed = gamepad_button_check_pressed(contrl_num, gp_face3);
+    key_flag = gamepad_button_check_pressed(contrl_num, gp_face2) // this is "B" button
 }

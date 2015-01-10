@@ -28,7 +28,8 @@
             <string>my_text[0]="1 Player"
 my_text[1]="2 Players"
 image_speed = 0
-image_index = 0
+// retain settings in case returning from finished game
+image_index = global.num_human_players - 1
 </string>
           </argument>
         </arguments>

@@ -228,7 +228,7 @@
       <script>scripts\scrMenuCursorCreateEvent.gml</script>
       <script>scripts\scrButtonInputPlayer1StepEvent.gml</script>
       <script>scripts\scrButtonInputPlayer2StepEvent.gml</script>
-      <script>scripts\scrButtonPlayer2TypeStepEvent_new.gml</script>
+      <script>scripts\scrButtonPlayer2TypeStepEvent.gml</script>
       <script>scripts\scrButtonMusicLevelStepEvent.gml</script>
       <script>scripts\scrButtonPointsStepEvent.gml</script>
     </scripts>

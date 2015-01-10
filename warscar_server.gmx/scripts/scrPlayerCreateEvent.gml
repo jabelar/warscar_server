@@ -1,6 +1,18 @@
 show_debug_message("scrPlayerCreateEvent starting for player = "+string(current_player))
-if current_player = PLAYER1 then body_sprite = sprHuskyRed
-else body_sprite = sprHuskyBlue
+if current_player = PLAYER1
+{
+    body_sprite = sprHuskyRed
+    
+    show_debug_message("Creating networking buffer for player1")
+    network_buff = buffer_create( 256, buffer_grow, 1)
+    buffer_seek(network_buff, buffer_seek_start, 0);
+    buffer_write(network_buff, buffer_s16, PING_CMD );
+    network_send_packet( global.client[current_player], network_buff, buffer_tell(network_buff) );
+}
+else
+{
+    body_sprite = sprHuskyBlue
+}
 has_main_gun = true
 
 input_forward = vk_up

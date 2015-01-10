@@ -232,6 +232,9 @@
       <script>scripts\scrButtonMusicLevelStepEvent.gml</script>
       <script>scripts\scrButtonPointsStepEvent.gml</script>
     </scripts>
+    <scripts name="Networking">
+      <script>scripts\scrPlayerNetworkingEvent.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontMilitary</font>

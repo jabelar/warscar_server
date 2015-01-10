@@ -4,6 +4,10 @@ globalvar SERVER, CLIENT ;
 SERVER = 0
 CLIENT = 1
 
+// networking commands
+globalvar PING_CMD ;
+PING_CMD = 27
+
 // input types
 globalvar TANK_KEYBOARD, TANK_JOYSTICK_PAIR, TANK_JOYSTICK_SING, TANK_JOYSTICK_DIR, TANK_TOUCH ;
 TANK_KEYBOARD = 0

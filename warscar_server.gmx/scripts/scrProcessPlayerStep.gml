@@ -2,6 +2,11 @@
 
 scrProcessInput()
 
+show_debug_message("Sending networking buffer for player1")
+buffer_seek(network_buff, buffer_seek_start, 0);
+buffer_write(network_buff, buffer_string, "Test" );
+network_send_packet( global.client[current_player], network_buff, buffer_tell(network_buff) );
+
 switch state
 {
     case NORMAL:

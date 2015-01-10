@@ -6,12 +6,18 @@ if current_player = PLAYER1
     show_debug_message("Creating networking buffer for player1")
     network_buff = buffer_create( 256, buffer_grow, 1)
     buffer_seek(network_buff, buffer_seek_start, 0);
-    buffer_write(network_buff, buffer_s16, PING_CMD );
+    buffer_write(network_buff, buffer_string, "Creating connection for Player 1" );
     network_send_packet( global.client[current_player], network_buff, buffer_tell(network_buff) );
 }
 else
 {
     body_sprite = sprHuskyBlue
+    
+    show_debug_message("Creating networking buffer for player2")
+    network_buff = buffer_create( 256, buffer_grow, 1)
+    buffer_seek(network_buff, buffer_seek_start, 0);
+    buffer_write(network_buff, buffer_string, "Creating connection for Player 2" );
+    network_send_packet( global.client[current_player], network_buff, buffer_tell(network_buff) );
 }
 has_main_gun = true
 

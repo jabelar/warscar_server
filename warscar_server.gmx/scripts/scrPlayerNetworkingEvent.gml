@@ -22,7 +22,7 @@ else if socket_id == global.socket[current_player] // my socket
     }
     else
     {
-        show_debug_message("My socket ="+string(global.socket[current_player])+"Packet contents ="+string(buffer_read(received_buff, buffer_string)))
+        show_debug_message("My socket ="+string(global.socket[current_player])+", Packet contents ="+string(buffer_read(received_buff, buffer_string)))
     }
 }
 else // not my socket

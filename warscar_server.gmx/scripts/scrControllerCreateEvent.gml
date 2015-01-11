@@ -4,11 +4,11 @@ scrConstants()
 
 show_debug_message("Running server side")
 global.networking_side = SERVER
-show_debug_message("Creating server socket")
 global.server = network_create_server(network_socket_tcp, 6510, 3)
-show_debug_message("Creating client sockets")
+show_debug_message("Creating server socket ="+string(global.server))
 global.client[PLAYER1] = network_create_socket(network_socket_tcp)
 global.client[PLAYER2] = network_create_socket(network_socket_tcp)
+show_debug_message("Creating client sockets, player 1 ="+string(global.client[PLAYER1])+", player 2 ="+string(global.client[PLAYER2]))
 global.ip_address[PLAYER1] = "127.0.0.1"
 global.ip_address[PLAYER2] = "192.168.1.21"
 global.socket[PLAYER1] = 0

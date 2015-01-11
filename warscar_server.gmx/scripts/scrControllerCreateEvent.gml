@@ -10,9 +10,12 @@ show_debug_message("Creating client sockets")
 global.client[PLAYER1] = network_create_socket(network_socket_tcp)
 global.client[PLAYER2] = network_create_socket(network_socket_tcp)
 global.ip_address[PLAYER1] = "127.0.0.1"
-// global.ip_address[PLAYER2] = "127.0.0.1"
+global.ip_address[PLAYER2] = "192.168.1.21"
+global.socket[PLAYER1] = 0
+global.socket[PLAYER2] = 0
+// start listening for network traffic
 network_connect( global.client[PLAYER1], global.ip_address[PLAYER1], 6510 )
-// network_connect( global.client[PLAYER2], global.ip_address[PLAYER2], 6510 )
+network_connect( global.client[PLAYER2], global.ip_address[PLAYER2], 6511 )
 
 global.game_type = CAPTURE_THE_FLAG
 
